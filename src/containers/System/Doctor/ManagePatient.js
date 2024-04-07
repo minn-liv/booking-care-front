@@ -144,6 +144,7 @@ class ManagePatient extends Component {
                                     </tr>
                                     {dataPatient && dataPatient.length > 0 ? (
                                         dataPatient.map((item, index) => {
+                                            console.log(item);
                                             let time =
                                                 language === LANGUAGES.VI
                                                     ? item.timeTypeDataPatient

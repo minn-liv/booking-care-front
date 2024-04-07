@@ -10,7 +10,7 @@ import "./ProfileDoctor.scss";
 import moment from "moment";
 import { Link } from "react-router-dom";
 
-class DefaultClass extends Component {
+class ProfileDoctor extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -180,4 +180,4 @@ const mapDispatchToProps = (dispatch) => {
     return {};
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(DefaultClass);
+export default connect(mapStateToProps, mapDispatchToProps)(ProfileDoctor);

@@ -27,7 +27,7 @@ class HomeHeader extends Component {
                 <div className="home-header-container">
                     <div className="home-header-content">
                         <div className="left-content">
-                            <i className="fa fa-bars"></i>
+                            {/* <i className="fa fa-bars"></i> */}
                             <img
                                 className="header-logo"
                                 src={logo}
@@ -125,13 +125,13 @@ class HomeHeader extends Component {
                             <div className="title2">
                                 <FormattedMessage id="banner.title2" />
                             </div>
-                            <div className="search">
+                            {/* <div className="search">
                                 <i className="fas fa-search"></i>
                                 <input
                                     type="text"
                                     placeholder="Tìm chuyên khoa khám bệnh"
                                 />
-                            </div>
+                            </div> */}
                         </div>
                         <div className="content-down">
                             <div className="options">

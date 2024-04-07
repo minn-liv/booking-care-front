@@ -179,6 +179,7 @@ class UserRedux extends Component {
         }
         if (action === CRUD_ACTIONS.EDIT) {
             // fire redux edit user
+            console.log(this.state);
             this.props.editAUserRedux({
                 id: this.state.userEditId,
                 email: this.state.email,
@@ -201,6 +202,7 @@ class UserRedux extends Component {
             imageBase64 = new Buffer(user.image, "base64").toString("binary");
         }
         this.setState({
+            userEditId: user.id,
             email: user.email,
             password: "HARDCODE",
             firstName: user.firstName,
@@ -235,16 +237,17 @@ class UserRedux extends Component {
         } = this.state;
         return (
             <div className="user-redux-container">
-                <div className="title">Learn User Redux hoi dan it</div>
+                <div className="title">
+                    {" "}
+                    <FormattedMessage id="manage-user.add" />
+                </div>
                 <div className="user-redux-body">
                     <div className="container">
                         <div className="row">
                             <div className="col-12">
                                 {isGetGender === true ? "Loading gender" : ""}
                             </div>
-                            <div className="col-12 my-3">
-                                <FormattedMessage id="manage-user.add" />{" "}
-                            </div>
+                            <div className="col-12 my-3"></div>
                             <div className="col-3">
                                 <label>
                                     <FormattedMessage id="manage-user.email" />
