@@ -101,6 +101,10 @@ const postSendRemedy = (data) => {
     return axios.post(`/api/send-remedy`, data);
 };
 
+const getAllBooking = () => {
+    return axios.get(`/api/get-all-booking`);
+};
+
 export {
     handleLoginApi,
     getAllUser,
@@ -126,4 +130,5 @@ export {
     getAllDetailClinicById,
     getAllPatientForDoctor,
     postSendRemedy,
+    getAllBooking,
 };

@@ -37,6 +37,7 @@ class TableManage extends Component {
             });
         }
     }
+
     handleDeleteUser = (user) => {
         this.props.deleteAUserRedux(user.id);
     };
